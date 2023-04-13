@@ -1,0 +1,21 @@
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.description .text {
+    max-width: 80%;
+    min-height: 150px;
+    margin: 10px 0;
+}
+
+.description .text h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.description .text p {
+    font-family: 'M PLUS 1p', sans-serif;
+}
