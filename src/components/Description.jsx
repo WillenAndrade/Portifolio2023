@@ -1,15 +1,24 @@
 import './Description.css'
+import {useState} from 'react'
 
 const Description = () => {
+    const [btnOn, setBtnOn] = useState(true)
     return(
         <section>
-            <section className="description">
-        <div className="text">
-            <h1>ABOUT ME</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus perspiciatis officia deleniti atque corrupti. Non, nesciunt commodi laborum quos corporis sed doloribus itaque fugiat natus. Doloremque aliquam perspiciatis debitis adipisci!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eius sed cupiditate, veniam delectus blanditiis minima odio libero nisi, quos dolor iste ex? Ullam sapiente molestias unde, sed culpa dolor.</p>
-        </div>
-    </section>
+            <div className="description">
+                <div className="text">
+                    <h1>Sobre Mim</h1>
+                    <p>Prazer, me chamo Willen Andrade, tenho 25 anos moro em Palmital-SP.</p>
+                    <p>Estudo programação desde o ano passado com foco no Front End.</p>
+                    <p>Sou disciplinado, fácil de lidar, prático e aprendo rápido.</p>
+                </div>
+                <div className={btnOn ? 'text2' : 'active'}>
+                <p>Prazer, me chamo Willen Andrade, tenho 25 anos moro em Palmital-SP.</p>
+                    <p>Estudo programação desde o ano passado com foco no Front End.</p>
+                    <p>Sou disciplinado, fácil de lidar, prático e aprendo rápido.</p>
+                </div>
+                <div className='div-button'><button onClick={()=> setBtnOn(!btnOn)}>{btnOn ? 'Mostrar mais': 'Mostrar menos'}</button></div>
+            </div>
         </section>
     )
 }

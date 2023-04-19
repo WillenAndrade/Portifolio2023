@@ -2,20 +2,58 @@
 .description {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.description  p {
+    font-family: 'M PLUS 1p', sans-serif;
+    margin: 0.5rem;
+}
+
+.description h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .description .text {
     max-width: 80%;
     min-height: 150px;
-    margin: 10px 0;
+    margin: auto;
+    font-weight: bold;
 }
 
-.description .text h1 {
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
+.description .text2 {
+    max-width: 80%;
+    min-height: 150px;
+    margin: auto;
+    font-weight: bold;
+    display: none;
 }
 
-.description .text p {
-    font-family: 'M PLUS 1p', sans-serif;
+.description .active {
+    max-width: 80%;
+    min-height: 150px;
+    margin: auto;
+    font-weight: bold;
+    display: block;
 }
+
+.description .div-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .div-button button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.description .div-button button:hover {
+    opacity: 0.7;
+}
+

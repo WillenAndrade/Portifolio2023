@@ -1,0 +1,41 @@
+.projects .javascript{
+    max-width: 80%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.projects .javascript .javascript-item1,
+.projects .javascript .javascript-item2,
+.projects .javascript .javascript-item3,
+.projects .javascript .javascript-item4 {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    background: yellow;
+    -webkit-transition: -webkit-tranform .5s ease;
+    transition: transform .5s ease;
+}
+
+.projects .javascript .javascript-item1 {
+    background-image: url('../imgs/generatePassword.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.projects .javascript .javascript-item1:hover,
+.projects .javascript .javascript-item2:hover,
+.projects .javascript .javascript-item3:hover,
+.projects .javascript .javascript-item4:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

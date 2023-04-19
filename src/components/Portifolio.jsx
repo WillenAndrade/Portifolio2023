@@ -11,24 +11,25 @@ const Portifolio = () => {
   const [openJavaScript, setOpenJavaScript] = useState(false)
   const [openReact, setOpenReact] = useState(false)
 
-  function handleHtmlCss() {
-        if(!openJavaScript && !openReact){
-            setOpenHtmlCss(!openHtmlCss)
-        }
+  const handleHtmlCss = () => {
+        setOpenJavaScript(false)
+        setOpenReact(false)
         
+        setOpenHtmlCss(!openHtmlCss)
 }
 
 const handleJavaScript = () => {
-        if (!openHtmlCss && !openReact) {
-            setOpenJavaScript(!openJavaScript)
-        }
+        setOpenHtmlCss(false)
+        setOpenReact(false)
         
+        setOpenJavaScript(!openJavaScript)
 }
 
 const handleReact = () => {
-        if(!openHtmlCss && !openJavaScript) {
-            setOpenReact(!openReact)
-        }
+        setOpenJavaScript(false)
+        setOpenHtmlCss(false)
+
+        setOpenReact(!openReact)
     }
     
     return(

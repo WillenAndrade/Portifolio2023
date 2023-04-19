@@ -1,4 +1,4 @@
-import './Projects.css'
+import './HtmlCss.css'
 
 const HtmlCss = () => {
     return(
@@ -6,7 +6,6 @@ const HtmlCss = () => {
             <div className="html-css-item1"></div>
             <div className="html-css-item2"></div>
             <div className="html-css-item3"></div>
-            <div className="html-css-item4"></div>
         </div>
     )
 }
